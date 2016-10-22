@@ -1,0 +1,61 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+Unterschiede im Code fallen durch die Möglichkeit des Vergleichs (Visualisierung) beider Versionen schneller auf.
+Tritt der Fehler erst ab einer bestimmten Version auf, kann Version Control das Auffinden des Fehlers durch einen Abgleich mit der letzten bugfreien Version erleichtern.
+
+——
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+- Neu auftretende Bugs können schneller und einfacher durch den Abgleich mit alten Versionen entdeckt werden.
+- Problemloses Zurückgreifen auf alte Versionen, falls neuer Code nicht funktioniert oder zur alten Version zurückgegangen werden soll/muss.
+- Übersicht über gesamte Code-Historie.
+
+——
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+Manuell:
++ Speicherzeitpunkt kann selbst bestimmt werden. Commits können somit zu einem passenden/logischen Zeitpunkt erfolgen, der beim Vergleich Sinn ergibt.
++ Commits können logisch aufgeteilt werden.
+- Manuelles Speichern kann vergessen werden, was zu Datenverlust führen kann.
+- Durch das manuelle Speichern können die Speicherabstände zu groß werden.
+
+Automatisch:
++ Automatische Speicherung kann Datenverlust vorbeugen, wenn Speichern vergessen wird.
+- Speichern zu einem „sinnlosen“ Zeitpunkt.
+
+——
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+Git wird vor allem für Code genutzt. Projekte verwenden meist mehrere Dateien, die alle für das Projekt benötigt werden und sich aufeinander beziehen.
+So können Änderungen durch das ganze Projekt hindurch getrackt werden.
+
+Google Docs arbeitet mit einzelnen Dokumenten, die mehrere Seiten enthalten können. Inhalte werden selten auf mehrere Google Docs aufgeteilt.
+
+——
+
+How can you use the commands git log and git diff to view the history of files?
+
+git log zeigt eine Liste der Änderungen des Repositorys an, inkl. ID des Commits, Autor, Datum und Kommentar.
+git diff vergleicht zwei Commits und zeigt die vorgenommenen Änderungen an.
+
+——
+
+How might using version control make you more confident to make changes that
+could break something?
+
+Testen und Ausprobieren einfach möglich, da problemlos auf einen funktionierenden Zustand zurückgegriffen werden kann.
+Alte Versionen gehen nicht verloren. Es müssen nicht erneut/doppelt gecodet werden.
+
+——
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Version Control bei den nächsten Projekten verwenden, v.a. Meow Project, um die Verwendung zu lernen.
