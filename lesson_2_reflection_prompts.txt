@@ -1,24 +1,43 @@
 What happens when you initialize a repository? Why do you need to do it?
 
+Mit dem Command git init wird das repository erstellt, das die Änderungen innerhalb des Ordners trackt.
+
 ——
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+
+In der staging area werden Änderungen an den Dateien getrackt, die im working directory bearbeitet werden. Mit git add werden ugeänderte Dateien für den Commit vorbereitet. 
+Mit git commit werden die gesamten geänderten Dateien, die der staging area hinzugefügt wurden, zum repository geaddet.
 
 ——
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+——
 
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+Branches können verwendet werden, um neben der master-Version weitere Unterprojekte anzulegen, z.B. experimentielle Features, die möglicherweise nicht übernommen werden. So können sie unabhängig von Änderungen am master branch bearbeitet werden.
+
+——
+
 How do the diagrams help you visualize the branch structure?
+
+——
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+Beim Mergen werden zwei Branches mit den bis zu diesem Zeitpunkt verfügbaren Commits zusammengefügt.
+
+——
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+Automatisches mergen funktioniert schnell und wird automatisch von Git vorgenommen. 
+Können Konflikte jedoch nicht von Git ausgeschlossen werden, muss der Merge manuell vorgenommen werden.
